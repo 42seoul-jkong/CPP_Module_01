@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     {
         std::cout << "---------------- newZombie ---------------" << std::endl;
         Zombie* zombie = newZombie(zombieName);
-        zombie->announcee();
+        zombie->announce();
         delete zombie;
         std::cout << "------------------------------------------" << std::endl;
     }

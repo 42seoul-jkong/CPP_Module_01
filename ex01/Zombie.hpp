@@ -16,7 +16,7 @@ public:
     Zombie();
     ~Zombie();
     void Initialize(const std::string& name);
-    void announcee();
+    void announce();
 };
 
 Zombie* zombieHorde(int N, std::string name);

@@ -19,7 +19,7 @@ void Zombie::Initialize(const std::string& name)
     this->name = name;
 }
 
-void Zombie::announcee()
+void Zombie::announce()
 {
     std::cout << this->name << ": " << ZOMBIE_MESSAGE << std::endl;
 }

@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     Zombie* horde = zombieHorde(n, zombieName);
     for (int i = 0; i < n; i++)
     {
-        horde[i].announcee();
+        horde[i].announce();
     }
     delete[] horde;
     return EXIT_SUCCESS;
