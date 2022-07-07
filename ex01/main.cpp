@@ -2,6 +2,7 @@
  * https://creativecommons.org/publicdomain/zero/1.0/ */
 
 #include "Zombie.hpp"
+#include <cstdlib>
 #include <iostream>
 
 int main(int argc, char* argv[])
