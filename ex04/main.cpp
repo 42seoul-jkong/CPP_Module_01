@@ -2,6 +2,7 @@
  * https://creativecommons.org/publicdomain/zero/1.0/ */
 
 #include <cstdlib>
+#include <cstring>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -46,7 +47,7 @@ int main(int argc, char* argv[])
         ss << ifs.rdbuf();
     }
     std::string text = replace(ss.str(), argv[2], argv[3]);
-    std::ofstream ofs(replaceFilename, std::ofstream::out | std::ofstream::trunc);
+    std::ofstream ofs(replaceFilename.c_str(), std::ofstream::out | std::ofstream::trunc);
     ofs << text;
     if (!ofs)
     {
